@@ -1,0 +1,160 @@
+body {
+  background: #090909;
+  color: gold;
+  text-align: center;
+  font-family: helvetica, serif;
+
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: gold;
+}
+input {
+  background: ivory;
+}
+input:hover {
+  background: gold;
+}
+img {
+  width: 40%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  background: gold;
+  color: #090909;
+  font-size: 25px;
+}
+i {
+  font-size: 16px;
+}
+h1, h2, h3, h4, h5, p {
+  margin: .1rem;
+  padding: 0;
+}
+textarea {
+  margin: 0;
+}
+/* div {
+  border: 1px solid gold;
+} */
+.main {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border: 1px solid gold;
+  margin: 1rem;
+}
+.innerBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+.innerPicBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding: .5rem;
+  border: 1px solid gold;
+  width: 100%;
+  height: 100%;
+}
+.picBox {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin: .5rem;
+}
+.jj {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: .5rem;
+}
+.jj > img {
+  width: 40%;
+  border-radius: 50%;
+  border: 5px solid gold;
+  margin: .8rem;
+}
+.results {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: .5rem;
+}
+.picBox > img {
+  width: 45%;
+  margin: .2rem;
+  padding: .2rem;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  height: 100%;
+}
+.delete:hover {
+  background: red;
+}
+.link {
+  color: #090909;
+  cursor: pointer;
+  font-size: 30px;
+  width: 100%;
+  padding: 1rem;
+  background: gold;
+}
+.link:hover {
+  color: ivory;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: gold;
+  color: #090909;
+  padding: .5rem;
+}
+a:hover {
+  color: ivory;
+}
+button:hover {
+  background: gold;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+img {
+  width: 70%;
+}
+.jj > img {
+  width: 70%;
+}
+.box {
+  flex-direction: column;
+  }
+}
