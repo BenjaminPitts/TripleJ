@@ -1,30 +1,40 @@
+
 body {
-  background: #090909;
-  color: gold;
+  background: ivory;
+  background-image: url("/img/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  color: black;
   text-align: center;
   font-family: helvetica, serif;
-
+  width: 100%;
+}
+.top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: .5rem;
+  padding: .5rem;
 }
 header {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  background: gold;
 }
 input {
-  background: ivory;
+  background: white;
 }
 input:hover {
-  background: gold;
+  background: #B0C4DE;
 }
 img {
-  width: 40%;
+  width: 30%;
   margin: 0;
 }
 a {
   text-decoration: none;
-  background: gold;
-  color: #090909;
+  color: black;
   font-size: 25px;
 }
 i {
@@ -37,24 +47,24 @@ h1, h2, h3, h4, h5, p {
 textarea {
   margin: 0;
 }
-/* div {
-  border: 1px solid gold;
-} */
 .main {
   text-align: center;
+  width:100%;
 }
 .container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
 }
 .box {
   display: flex;
   flex-direction: row;
   align-items: center;
   width: 100%;
-  border: 1px solid gold;
+  border-radius: 5px;
+  box-shadow: 10px 15px #090909;
   margin: 1rem;
 }
 .innerBox {
@@ -62,6 +72,8 @@ textarea {
   flex-direction: column;
   justify-content: flex-start;
   text-align: center;
+  border-radius: 5px;
+  background: #d3d3d3;
   padding: 0;
   width: 100%;
   height: 100%;
@@ -71,9 +83,12 @@ textarea {
   flex-direction: column;
   justify-content: center;
   text-align: center;
+  margin: 1rem auto;
   padding: .5rem;
-  border: 1px solid gold;
-  width: 100%;
+  background: #d3d3d3;
+  border-radius: 5px;
+  box-shadow: 10px 15px #090909;
+  width: 85%;
   height: 100%;
 }
 .picBox {
@@ -81,20 +96,22 @@ textarea {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 98%;
+  width: 100%;
   margin: .5rem;
+}
+.picBox > img {
+  border: 2px solid black;
 }
 .jj {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: .5rem;
+  margin: .6rem;
 }
 .jj > img {
-  width: 40%;
-  border-radius: 50%;
-  border: 5px solid gold;
+  width: 50%;
+  border: 2px solid black;
   margin: .8rem;
 }
 .results {
@@ -116,45 +133,67 @@ textarea {
   padding: 1rem;
   height: 100%;
 }
+.mission {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border-radius: 5px;
+    background: #d3d3d3;
+    box-shadow: 10px 15px #090909;
+    padding: 1rem;
+    margin: .5rem auto;
+    width: 85%;
+}
 .delete:hover {
   background: red;
 }
 .link {
-  color: #090909;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  color: black;
   cursor: pointer;
   font-size: 30px;
   width: 100%;
-  padding: 1rem;
-  background: gold;
+  height: 90px;
+  background: #B0C4DE;
 }
 .link:hover {
-  color: ivory;
+  background: #d3d3d3;
 }
 .footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  background: gold;
-  color: #090909;
-  padding: .5rem;
+  background: #B0C4DE;
+  color: black;
+  padding: 1rem;
+  width: 100%;
+}
+.footer > img {
+  width: 20%;
+  border: none;
 }
 a:hover {
-  color: ivory;
+  color: #d3d3d3;
 }
 button:hover {
-  background: gold;
+  background: #d3d3d3;
   cursor: pointer;
 }
 
 @media only screen and (max-width: 700px) {
-img {
-  width: 70%;
-}
+
 .jj > img {
-  width: 70%;
+  width: 80%;
 }
 .box {
+  flex-direction: column;
+  }
+.top {
   flex-direction: column;
   }
 }

@@ -4,30 +4,31 @@
 class App extends React.Component {
     state = {
         page: 'main',
-        number: 0,
         reviews:[]
     }
     setPage = (goto) => {
   		if (goto === 'main') {
   			this.setState({
   				page: 'main'
-  			});
+  			})
+        ReactDOM.findDOMNode(this).scrollIntoView()
   		} else if (goto === 'reviews') {
   			this.setState({
   				page: 'reviews'
-  			});
+  			})
   		} else if (goto === 'pics') {
   			this.setState({
   				page: 'pics'
-  			});
-  		} else if (goto === 'pricing') {
+  			})
+  		} else if (goto === 'services') {
         this.setState({
-          page: 'pricing'
+          page: 'services'
         })
       }
-  	};
+  	}
 
     componentDidMount = () => {
+      ReactDOM.findDOMNode(this).scrollIntoView()
         axios.get('/api/reviews').then(
             (response) => {
                 this.setState({
@@ -39,7 +40,7 @@ class App extends React.Component {
     }
 
     createReview = (event) => {
-        event.preventDefault();
+        event.preventDefault()
         axios.post(
             '/api/reviews',
             {
@@ -87,7 +88,7 @@ class App extends React.Component {
 
     updateReview = (event) => {
         event.preventDefault();
-        const id = event.target.getAttribute('id');
+        const id = event.target.getAttribute('id')
         axios.put(
             '/api/reviews/' + id,
             {
@@ -134,20 +135,19 @@ class App extends React.Component {
     }
 
     render = () => {
-      const { page } = this.state;
+      const { page } = this.state
       if (page === 'reviews'){
-        return <div className='main' id='top'>
-        <h1>TripleJ Reviews</h1>
-        <br />
+        return <div className='main'>
+        <h1>TripleJ Logo</h1>
             <div className='container'>
                 {
                     this.state.reviews.map(
                         (review, index) => {
-                            return <div className='box' key={index}>
+                            return <div className='innerPicBox' key={index}>
 
-                            <img src={review.pics} /><br />
+
                             <div className='innerBox'>
-                                <h4>--{review.name}<br />
+                                <h4>-{review.name}<br />
                                 <i>'{review.comments}'</i><br /><br />
                                 Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
                                 <details><summary>Edit Post</summary>
@@ -176,23 +176,23 @@ class App extends React.Component {
             </form><br />
 
             <div className='link' onClick={()=> this.setPage('main')}>
-            Back Home</div>
+            Back To Main</div>
         </div>
       } else if (page === 'pics') {
         return (
-          <div className='container'>
-          <h2>Pics Test Page</h2><br />
+          <div className='main'>
+          <h1>TripleJ Logo</h1>
           <div className='innerPicBox'>
           <div className='results'>
           <h4>Before:</h4>
           <h4>After:</h4>
           </div>
           <div className='picBox'>
-          <img src='https://i.imgur.com/Ni4r2aP.jpeg' />
-          <img src='https://i.imgur.com/dTYQkcJ.jpg' />
+          <img src='/img/before1.jpg' />
+          <img src='/img/after1.jpg' />
           </div>
           <div className='description'>
-          This is a description of the job
+          <i>Flawless results regardless of previous condition.</i>
           </div>
           </div>
           <br />
@@ -203,55 +203,88 @@ class App extends React.Component {
           <h4>After:</h4>
           </div>
           <div className='picBox'>
-          <img src='https://i.imgur.com/Gwb3pm5.jpg' />
-          <img src='https://i.imgur.com/ijWIK1w.jpg' />
+          <img src='/img/before2.jpg' />
+          <img src='/img/after2.jpg' />
           </div>
           <div className='description'>
-          This is a description of the job
+          <i>Professional techniques and quick cleanup.</i>
           </div>
           </div>
           <br />
+
+          <div className='innerPicBox'>
+          <div className='results'>
+          <h4>Business:</h4>
+          <h4>Residence:</h4>
+          </div>
+          <div className='picBox'>
+          <img src='/img/business.jpg' />
+          <img src='/img/residence.jpg' />
+          </div>
+          <div className='description'>
+          <i>A quick and easy way to add value to your property.</i>
+          </div>
+          </div>
+
+          <br />
           <div className='link' onClick={()=> this.setPage('main')}>
-          Back Home</div>
+          Back To Main</div>
           </div>
         )
-      } else if (page === 'pricing') {
+      } else if (page === 'services') {
         return (
           <div>
-          <h2>Pricing Test Page</h2>
-          <h4> We use <a href='#'> xyz </a> brand of paint and our rates are negotiable depending on the circumstances:</h4>
-          <h3>Indoor: $$$/sq foot</h3>
-          <h3>Outdoor: $$$/sq foot</h3><br />
-          <h4>Email us at
-          <a href='mailto:example@gmail.com'> example@gmail.com </a>
-          for a customized quote!</h4><br /><br /><br /><br />
+          <h1>TripleJ Logo</h1><br />
+          <h2>We serve the greater Denver Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in:</h2><br /><br />
+          <h3>Residential</h3>
+          <h3>Commercial</h3>
+          <h3>Interior</h3>
+          <h3>Exterior</h3>
+          <h3>Trim</h3>
+          <h3>Molding</h3>
+          <h3>Gutters</h3>
+          <br /><br />
+          <h2>Call us today at (720) 688-9469 or</h2>
+          <h2>email us at
+          <a href='mailto:jjjpaintco@gmail.com'> jjjpaintco@gmail.com </a>
+          for a free quote!</h2><br /><br />
+          <br /><br /><br />
           <div className='link' onClick={()=> this.setPage('main')}>
-          Back Home</div>
+          Back To Main</div>
           </div>
         )
       } else if (page === 'main') {
         return (
-          <div>
-          <h1>TripleJ Logo</h1><br />
+          <div className='main'>
+          <div className='top'>
+          <h2>(720) 688-9469</h2>
+          <h1>TripleJ Logo</h1>
+          <h2><a href='jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a></h2>
+          </div>
           <header>
+          <div className='link' onClick={()=> this.setPage('services')}>
+          Services</div>
           <div className='link' onClick={()=> this.setPage('pics')}>
-          Pics</div>
-          <div className='link' onClick={()=> this.setPage('pricing')}>
-          Quotes</div>
+          Images</div>
           <div className='link' onClick={()=> this.setPage('reviews')}>
           Reviews</div>
           </header>
           <div className='jj'>
-          <img src='https://i.imgur.com/qtRPx3H.jpg' />
+          <img src='https://i.imgur.com/qtRPx3H.jpg' /></div>
+          <h2><div className='mission'>We are a small business with big goals!
+          <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete – we stake our reputation on your satisfaction.'
+          </i></div></h2>
+          <div className='jj'>
+          <img src='/img/joe.jpg' />
           </div>
-          <h2><p>this is who we are and this is our mission</p></h2>
-          <p><i>we are solid dudes that are good at painting things</i></p>
-          <br /><br />
+          <h2><div className='mission'>We can help improve the curb appeal of your home or business.
+          <i>'At Triple J, customer satisfaction is not just a tag-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to quality in our work and integrity is what differentiates us from the competition.'
+          </i></div></h2><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/?ref=page_internal'>FB</a>
-          <a href='#'>IG</a>
-          <a href='#'>Twitter</a>
-          <a href='#'>LinkedIn</a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='/img/fb.jpg' /></a>
+          <a href='https://nightwraith.bandcamp.com/'><img src='/img/ig.jpg' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='/img/li.jpg' /></a></div>
           </div>
         )
       }
@@ -261,6 +294,5 @@ class App extends React.Component {
 
 ReactDOM.render(
     <App></App>,
-
-    document.querySelector('main')
+  document.querySelector('main')
 )
