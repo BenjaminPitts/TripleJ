@@ -188,8 +188,8 @@ class App extends React.Component {
           <h4>After:</h4>
           </div>
           <div className='picBox'>
-          <img src='/img/before1.jpg' />
-          <img src='/img/after1.jpg' />
+          <img src='https://i.imgur.com/7ErfHFN.jpg' />
+          <img src='https://i.imgur.com/2J2kRw9.jpg' />
           </div>
           <div className='description'>
           <i>Flawless results regardless of previous condition.</i>
@@ -203,8 +203,8 @@ class App extends React.Component {
           <h4>After:</h4>
           </div>
           <div className='picBox'>
-          <img src='/img/before2.jpg' />
-          <img src='/img/after2.jpg' />
+          <img src='https://i.imgur.com/NGgbqxW.jpg' />
+          <img src='https://i.imgur.com/73LHWLL.jpg' />
           </div>
           <div className='description'>
           <i>Professional techniques and quick cleanup.</i>
@@ -218,8 +218,8 @@ class App extends React.Component {
           <h4>Residence:</h4>
           </div>
           <div className='picBox'>
-          <img src='/img/business.jpg' />
-          <img src='/img/residence.jpg' />
+          <img src='https://i.imgur.com/lAOCcSe.jpg' />
+          <img src='https://i.imgur.com/t1EMY5P.jpg' />
           </div>
           <div className='description'>
           <i>A quick and easy way to add value to your property.</i>
@@ -276,15 +276,15 @@ class App extends React.Component {
           <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete – we stake our reputation on your satisfaction.'
           </i></div></h2>
           <div className='jj'>
-          <img src='/img/joe.jpg' />
+          <img src='https://i.imgur.com/y4bCHG6.jpg' />
           </div>
           <h2><div className='mission'>We can help improve the curb appeal of your home or business.
           <i>'At Triple J, customer satisfaction is not just a tag-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to quality in our work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='/img/fb.jpg' /></a>
-          <a href='https://nightwraith.bandcamp.com/'><img src='/img/ig.jpg' /></a>
-          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='/img/li.jpg' /></a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='https://i.imgur.com/OSayseb.jpg' /></a>
+          <a href='https://nightwraith.bandcamp.com/'><img src='https://i.imgur.com/5jW494e.jpg' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='https://i.imgur.com/mxMlI7y.jpg' /></a></div>
           </div>
         )
       }
