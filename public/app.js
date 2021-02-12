@@ -178,7 +178,7 @@ class App extends React.Component {
           <i>contact us today for a free quote</i>
           <div className='top'>
           <h2>(720) 688-9469</h2>
-          <h2><a href='jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          <h2><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></h2>
           </div>
           <header>
