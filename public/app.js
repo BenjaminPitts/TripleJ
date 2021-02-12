@@ -145,22 +145,46 @@ class App extends React.Component {
           </div>
 
           <br />
+          <div className='innerPicBox'>
+          <div className='results'>
+          <h4>Interior:</h4>
+          <h4>Exterior:</h4>
+          </div>
+          <div className='picBox'>
+          <img src='https://i.imgur.com/RL8xcVr.jpg' />
+          <img src='https://i.imgur.com/cO4sRWP.jpg' />
+          </div>
+          <div className='description'>
+          <i>wide range of services</i>
+          </div>
+          </div>
+
+          <br />
           <div className='link' onClick={()=> this.setPage('main')}>
           Back To Main</div>
           </div>
         )
       } else if (page === 'services') {
         return (
-          <div>
+          <div className='listBox'>
           <h1>TripleJ Logo</h1><br />
           <h2>We serve the greater Denver Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in:</h2><br /><br />
-          <h2>Residential</h2>
-          <h2>Commercial</h2>
-          <h2>Interior</h2>
-          <h2>Exterior</h2>
-          <h2>Trim</h2>
-          <h2>Molding</h2>
-          <h2>Gutters</h2>
+
+          <div className='innerPicBox'>
+          <div className='picBox'>
+          <div className='list'>
+          <h2><li>Residential</li>
+          <li>Commercial</li>
+          <li>Interior</li>
+          <li>Exterior</li>
+          <li>Trim</li>
+          <li>Molding</li>
+          <li>Gutters</li></h2>
+          </div>
+          <img src='https://i.imgur.com/vIttDYs.jpg' />
+          </div>
+          </div>
+
           <br /><br />
           <h2>Call us today at (720) 688-9469 or</h2>
           <h2>email us at
