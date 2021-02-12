@@ -177,6 +177,13 @@ textarea {
   width: 20%;
   border: none;
 }
+#textarea {
+  margin: .2rem;
+  width: 50%;
+}
+#textarea:hover {
+  background: #B0C4DE;
+}
 a:hover {
   color: #d3d3d3;
 }

@@ -1,5 +1,3 @@
-//import React, {Component} from 'react'
-//import Show from './components/Show'
 
 class App extends React.Component {
     state = {
@@ -69,70 +67,6 @@ class App extends React.Component {
             newReviewName:event.target.value
         });
     }
-    changeNewReviewPics = (event) => {
-      this.setState({
-        newReviewPics:event.target.value
-      })
-    }
-
-    deleteReview = (event) => {
-        axios.delete('/api/reviews/' + event.target.value).then(
-            (response) => {
-                this.setState({
-                    reviews:response.data
-                })
-            }
-        )
-
-    }
-
-    updateReview = (event) => {
-        event.preventDefault();
-        const id = event.target.getAttribute('id')
-        axios.put(
-            '/api/reviews/' + id,
-            {
-                name:this.state.updateReviewName,
-                comments:this.state.updateReviewComment,
-                pics:this.state.updateReviewPics
-            }
-        ).then(
-            (response) => {
-                this.setState({
-                    reviews:response.data,
-                    name:'',
-                    comments:'',
-                    pics:''
-                })
-            }
-        )
-        event.target.reset()
-        //window.location.reload(false);
-    }
-
-    changeUpdateReviewName = (event) => {
-        this.setState(
-            {
-                updateReviewName:event.target.value
-            }
-        )
-    }
-
-    changeUpdateReviewComment = (event) => {
-        this.setState(
-            {
-                updateReviewComment:event.target.value
-            }
-        )
-    }
-
-    changeUpdateReviewPics = (event) => {
-      this.setState(
-        {
-          updateReviewPics:event.target.value
-        }
-      )
-    }
 
     render = () => {
       const { page } = this.state
@@ -144,37 +78,22 @@ class App extends React.Component {
                     this.state.reviews.map(
                         (review, index) => {
                             return <div className='innerPicBox' key={index}>
-
-
                             <div className='innerBox'>
                                 <h4>-{review.name}<br />
                                 <i>'{review.comments}'</i><br /><br />
                                 Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
-                                <details><summary>Edit Post</summary>
-                                <h5>Must Fill Out All Fields</h5>
-                                <form id={review.id} onSubmit={this.updateReview}>
-                                    <input onKeyUp={this.changeUpdateReviewName} type="text" placeholder='name' /><br/>
-                                    <input id='comments' onKeyUp={this.changeUpdateReviewComment} type="text" placeholder='comments'/><br/>
-                                    <input onKeyUp={this.changeUpdateReviewPics} type='text' placeholder='img URL'/><br />
-
-                                    <input type="submit" value="Update Review"/><br />
-                                    <button className='delete' value={review.id} onClick={this.deleteReview}>DELETE REVIEW</button>
-                                </form>
-                                </details>
                                 </div>
                             </div>
                         }
                     )
                 }
-            </div>
-            <h2>Post A Review</h2>
+            </div><br />
+            <h2>Post A Review:</h2>
             <form onSubmit={this.createReview}>
                 <input onKeyUp={this.changeNewReviewName} type="text" placeholder="name" /><br/>
-                <input id ='comments' onKeyUp={this.changeNewReviewComment} type="text" placeholder="comments" /><br/>
-                <input onKeyUp={this.changeNewReviewPics} type='text' placeholder='image URL' /><br />
+                <textarea id='textarea' onKeyUp={this.changeNewReviewComment} type="text" placeholder="comments" /><br/>
                 <input type="submit" value="Create New Review" />
             </form><br />
-
             <div className='link' onClick={()=> this.setPage('main')}>
             Back To Main</div>
         </div>
@@ -192,7 +111,7 @@ class App extends React.Component {
           <img src='https://i.imgur.com/2J2kRw9.jpg' />
           </div>
           <div className='description'>
-          <i>Flawless results regardless of previous condition.</i>
+          <i>flawless results regardless of previous condition</i>
           </div>
           </div>
           <br />
@@ -207,7 +126,7 @@ class App extends React.Component {
           <img src='https://i.imgur.com/73LHWLL.jpg' />
           </div>
           <div className='description'>
-          <i>Professional techniques and quick cleanup.</i>
+          <i>professional techniques and quick cleanup</i>
           </div>
           </div>
           <br />
@@ -222,7 +141,7 @@ class App extends React.Component {
           <img src='https://i.imgur.com/t1EMY5P.jpg' />
           </div>
           <div className='description'>
-          <i>A quick and easy way to add value to your property.</i>
+          <i>a quick and easy way to add value to your property</i>
           </div>
           </div>
 
@@ -236,13 +155,13 @@ class App extends React.Component {
           <div>
           <h1>TripleJ Logo</h1><br />
           <h2>We serve the greater Denver Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in:</h2><br /><br />
-          <h3>Residential</h3>
-          <h3>Commercial</h3>
-          <h3>Interior</h3>
-          <h3>Exterior</h3>
-          <h3>Trim</h3>
-          <h3>Molding</h3>
-          <h3>Gutters</h3>
+          <h2>Residential</h2>
+          <h2>Commercial</h2>
+          <h2>Interior</h2>
+          <h2>Exterior</h2>
+          <h2>Trim</h2>
+          <h2>Molding</h2>
+          <h2>Gutters</h2>
           <br /><br />
           <h2>Call us today at (720) 688-9469 or</h2>
           <h2>email us at
@@ -256,9 +175,10 @@ class App extends React.Component {
       } else if (page === 'main') {
         return (
           <div className='main'>
+          <h1>TripleJ Logo</h1>
+          <i>contact us today for a free quote</i>
           <div className='top'>
           <h2>(720) 688-9469</h2>
-          <h1>TripleJ Logo</h1>
           <h2><a href='jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></h2>
           </div>
@@ -288,7 +208,6 @@ class App extends React.Component {
           </div>
         )
       }
-
     }
 }
 
