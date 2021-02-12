@@ -44,7 +44,6 @@ class App extends React.Component {
             {
                 name:this.state.newReviewName,
                 comments:this.state.newReviewComment,
-                pics:this.state.newReviewPics
             }
         ).then(
             (response) => {
@@ -196,7 +195,7 @@ class App extends React.Component {
           <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete – we stake our reputation on your satisfaction.'
           </i></div></h2>
           <div className='jj'>
-          <img src='https://i.imgur.com/y4bCHG6.jpg' />
+          <img src='https://i.imgur.com/y4bCHG6.jpg?1' />
           </div>
           <h2><div className='mission'>We can help improve the curb appeal of your home or business.
           <i>'At Triple J, customer satisfaction is not just a tag-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to quality in our work and integrity is what differentiates us from the competition.'

@@ -33,7 +33,6 @@ class Admin extends React.Component {
             {
                 name:this.state.updateReviewName,
                 comments:this.state.updateReviewComment,
-                pics:this.state.updateReviewPics
             }
         ).then(
             (response) => {
@@ -41,7 +40,6 @@ class Admin extends React.Component {
                     reviews:response.data,
                     name:'',
                     comments:'',
-                    pics:''
                 })
             }
         )
@@ -75,7 +73,6 @@ class Admin extends React.Component {
                     this.state.reviews.map(
                         (review, index) => {
                             return <div className='innerPicBox' key={index}>
-                            <img src={review.pics} /><br />
                             <div className='innerBox'>
                                 <h4>-{review.name}<br />
                                 <i>'{review.comments}'</i><br /><br />
