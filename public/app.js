@@ -71,7 +71,7 @@ class App extends React.Component {
       const { page } = this.state
       if (page === 'reviews'){
         return <div className='main'>
-        <h1>TripleJ Logo</h1>
+        <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
             <div className='container'>
                 {
                     this.state.reviews.map(
@@ -99,7 +99,7 @@ class App extends React.Component {
       } else if (page === 'pics') {
         return (
           <div className='main'>
-          <h1>TripleJ Logo</h1>
+          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
           <div className='innerPicBox'>
           <div className='results'>
           <h4>Before:</h4>
@@ -155,7 +155,7 @@ class App extends React.Component {
           <img src='https://i.imgur.com/cO4sRWP.jpg' />
           </div>
           <div className='description'>
-          <i>wide range of services</i>
+          <i>a wide range of services</i>
           </div>
           </div>
 
@@ -167,7 +167,7 @@ class App extends React.Component {
       } else if (page === 'services') {
         return (
           <div className='listBox'>
-          <h1>TripleJ Logo</h1><br />
+          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
           <h2>We serve the greater Denver Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in:</h2><br /><br />
 
           <div className='innerPicBox'>
@@ -198,8 +198,7 @@ class App extends React.Component {
       } else if (page === 'main') {
         return (
           <div className='main'>
-          <h1>TripleJ Logo</h1>
-          <i>contact us today for a free quote</i>
+          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
           <div className='top'>
           <h2>(720) 688-9469</h2>
           <h2><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
