@@ -1,1 +1,3 @@
-TripleJ is a SPA built with PHP on a Laravel framework. Its gonna be fuckin rad!
+Triple J Painting Company is a full-CRUD, single page application built on a Laravel/PHP stack with React on the frontend. It uses a postgreSQL database for the reviews section and has an admin route for update/delete functions. Users can easily see the bio, look at portfolio pictures, contact the company, and leave reviews about their experience. This app is responsive, mobile friendly, and users are able to quickly toggle between the different views.
+<br><br>
+-[Triple J Painting Company](https://triplejpainting.herokuapp.com/)

@@ -79,7 +79,7 @@ class Admin extends React.Component {
                                 <h4>-{review.name}<br />
                                 <i>'{review.comments}'</i><br /><br />
                                 Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
-                                <details><summary>Edit Post</summary>
+                                <details className='details'><summary>Edit Post</summary>
                                 <h5>Must Fill Out All Fields</h5>
                                 <form id={review.id} onSubmit={this.updateReview}>
                                     <input onKeyUp={this.changeUpdateReviewName} type="text" placeholder='name' /><br/>
