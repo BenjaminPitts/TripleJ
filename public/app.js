@@ -201,8 +201,8 @@ class App extends React.Component {
           </div>
 
           <br /><br />
-          <h2>Call us today at<br />(720)688-9469 or</h2>
-          <h2>email us at<br />
+          <h2>Call us today at:<br />(720)688-9469<br /><br />
+          or email us at:<br />
           <a href='mailto:jjjpaintco@gmail.com'> jjjpaintco@gmail.com </a>
           <br />for a free quote!</h2><br />
           <br /><br /><br />

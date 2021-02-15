@@ -65,9 +65,11 @@ class Admin extends React.Component {
 
     render = () => {
         return <div className='main' id='top'>
-        <h1>TripleJ Logo</h1><br />
-        <h2>Admin Page:</h2>
-        <br />
+        <div className='top'>
+        <h2>ADMIN PAGE</h2>
+        <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+        <h2>ADMIN PAGE</h2>
+        </div>
             <div className='container'>
                 {
                     this.state.reviews.map(
