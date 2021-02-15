@@ -71,7 +71,12 @@ class App extends React.Component {
       const { page } = this.state
       if (page === 'reviews'){
         return <div className='main'>
-        <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
+        <div className='top'>
+        <h3>(720)688-9469</h3>
+        <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+        <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+        </a>
+        </div><br />
             <div className='container'>
                 {
                     this.state.reviews.map(
@@ -99,7 +104,12 @@ class App extends React.Component {
       } else if (page === 'pics') {
         return (
           <div className='main'>
-          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
+          <div className='top'>
+          <h3>(720)688-9469</h3>
+          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a>
+          </div><br />
           <div className='innerPicBox'>
           <div className='results'>
           <h4>Before:</h4>
@@ -166,10 +176,15 @@ class App extends React.Component {
         )
       } else if (page === 'services') {
         return (
-          <div className='listBox'>
-          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
-          <h2>We serve the greater Denver Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in:</h2><br /><br />
 
+          <div className='listBox'>
+          <div className='top'>
+          <h3>(720)688-9469</h3>
+          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a>
+          </div><br />
+          <h2>We serve the greater Denver-Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in the following:</h2><br />
           <div className='innerPicBox'>
           <div className='picBox'>
           <div className='list'>
@@ -186,10 +201,10 @@ class App extends React.Component {
           </div>
 
           <br /><br />
-          <h2>Call us today at (720) 688-9469 or</h2>
-          <h2>email us at
+          <h2>Call us today at<br />(720)688-9469 or</h2>
+          <h2>email us at<br />
           <a href='mailto:jjjpaintco@gmail.com'> jjjpaintco@gmail.com </a>
-          for a free quote!</h2><br /><br />
+          <br />for a free quote!</h2><br />
           <br /><br /><br />
           <div className='link' onClick={()=> this.setPage('main')}>
           Back To Main</div>
@@ -198,12 +213,12 @@ class App extends React.Component {
       } else if (page === 'main') {
         return (
           <div className='main'>
-          <img className='logo' src='https://i.imgur.com/tzJ3XCQ.png?1' />
           <div className='top'>
-          <h2>(720) 688-9469</h2>
-          <h2><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
-          </a></h2>
-          </div>
+          <h3>(720)688-9469</h3>
+          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a>
+          </div><br />
           <header>
           <div className='link' onClick={()=> this.setPage('services')}>
           Services</div>

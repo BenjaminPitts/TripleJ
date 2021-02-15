@@ -19,7 +19,8 @@ body {
 }
 .logo {
   width: 40%;
-  margin-bottom: -1rem;;
+  border-radius: 10px;
+  margin-bottom: .5rem;
 }
 header {
   display: flex;
@@ -38,13 +39,15 @@ img {
 a {
   text-decoration: none;
   color: black;
-  font-size: 25px;
+  font-size: 19px;
+  margin: 0;
+  padding: 0;
 }
 i {
   font-size: 16px;
 }
 h1, h2, h3, h4, h5, p {
-  margin: .1rem;
+  margin: .2rem;
   padding: 0;
 }
 textarea {
@@ -213,7 +216,7 @@ button:hover {
   cursor: pointer;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 750px) {
 
 .jj > img {
   width: 80%;
