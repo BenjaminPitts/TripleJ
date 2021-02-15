@@ -239,9 +239,9 @@ class App extends React.Component {
           <i>'At Triple J, customer satisfaction is not just a tag-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to quality in our work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='https://i.imgur.com/OSayseb.jpg' /></a>
-          <a href='https://nightwraith.bandcamp.com/'><img src='https://i.imgur.com/5jW494e.jpg' /></a>
-          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='https://i.imgur.com/mxMlI7y.jpg' /></a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='https://i.imgur.com/br1AdKl.png' /></a>
+          <a href='https://nightwraith.bandcamp.com/'><img src='https://i.imgur.com/I0uryE6.png' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='https://i.imgur.com/HJL6IBU.png' /></a></div>
           </div>
         )
       }

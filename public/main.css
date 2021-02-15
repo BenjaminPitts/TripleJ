@@ -182,12 +182,8 @@ li {
   align-items: center;
   background: #B0C4DE;
   color: black;
-  padding: 1rem;
+  padding: .5rem;
   width: 100%;
-}
-.footer > img {
-  width: 20%;
-  border: none;
 }
 .list {
   display: flex;
