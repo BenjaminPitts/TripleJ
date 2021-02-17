@@ -85,7 +85,7 @@ class App extends React.Component {
                             <div className='innerBox'>
                                 <h4>-{review.name}<br />
                                 <i>'{review.comments}'</i><br /><br />
-                                Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
+                                Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4>
                                 </div>
                             </div>
                         }
@@ -230,13 +230,13 @@ class App extends React.Component {
           <div className='jj'>
           <img src='https://i.imgur.com/qtRPx3H.jpg' /></div>
           <h2><div className='mission'>We are a small business with big goals!
-          <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete – we stake our reputation on your satisfaction.'
+          <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete. We stake our reputation on your satisfaction!'
           </i></div></h2>
           <div className='jj'>
           <img src='https://i.imgur.com/y4bCHG6.jpg?1' />
           </div>
           <h2><div className='mission'>We can help improve the curb appeal of your home or business.
-          <i>'At Triple J, customer satisfaction is not just a tag-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to quality in our work and integrity is what differentiates us from the competition.'
+          <i>'At Triple J, customer satisfaction is not just a catch-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to hard work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br />
           <div className='footer'>
           <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='https://i.imgur.com/br1AdKl.png' /></a>
