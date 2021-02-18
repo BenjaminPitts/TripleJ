@@ -73,7 +73,7 @@ class App extends React.Component {
         return <div className='main'>
         <div className='top'>
         <h3>(720)688-9469</h3>
-        <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+        <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
         <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
         </a>
         </div><br />
@@ -106,7 +106,7 @@ class App extends React.Component {
           <div className='main'>
           <div className='top'>
           <h3>(720)688-9469</h3>
-          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
           <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a>
           </div><br />
@@ -180,7 +180,7 @@ class App extends React.Component {
           <div className='listBox'>
           <div className='top'>
           <h3>(720)688-9469</h3>
-          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
+          <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
           <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a>
           </div><br />
@@ -239,9 +239,9 @@ class App extends React.Component {
           <i>'At Triple J, customer satisfaction is not just a catch-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to hard work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/'><img src='https://i.imgur.com/br1AdKl.png' /></a>
-          <a href='https://nightwraith.bandcamp.com/'><img src='https://i.imgur.com/I0uryE6.png' /></a>
-          <a href='https://www.linkedin.com/in/benjaminjackpitts/'><img src='https://i.imgur.com/HJL6IBU.png' /></a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' /></a>
+          <a href='https://nightwraith.bandcamp.com/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' /></a></div>
           </div>
         )
       }
