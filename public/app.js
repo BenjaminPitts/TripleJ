@@ -230,7 +230,7 @@ class App extends React.Component {
           <div className='jj'>
           <img src='https://i.imgur.com/qtRPx3H.jpg' /></div>
           <h2><div className='mission'>We are a small business with big goals!
-          <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. To uphold this standard, we stand behind every job we complete. We stake our reputation on your satisfaction!'
+          <i>'Our mission is to provide the highest quality painting services in our industry paired with customer service that is unparalleled. We stand behind every job we complete and we stake our reputation on your satisfaction!'
           </i></div></h2>
           <div className='jj'>
           <img src='https://i.imgur.com/y4bCHG6.jpg?1' />
@@ -240,7 +240,7 @@ class App extends React.Component {
           </i></div></h2><br /><br />
           <div className='footer'>
           <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' /></a>
-          <a href='https://nightwraith.bandcamp.com/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' /></a>
+          <a href='https://www.instagram.com/triple_j_painting/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' /></a>
           <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' /></a></div>
           </div>
         )
