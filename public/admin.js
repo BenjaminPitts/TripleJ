@@ -66,9 +66,9 @@ class Admin extends React.Component {
     render = () => {
         return <div className='main' id='top'>
         <div className='top'>
-        <h2>ADMIN PAGE</h2>
+        <div className='innerPicBox' id='head'><h2>ADMIN PAGE</h2></div>
         <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
-        <h2>ADMIN PAGE</h2>
+        <div className='innerPicBox' id='head'><h2>ADMIN PAGE</h2></div>
         </div>
             <div className='container'>
                 {
@@ -80,7 +80,7 @@ class Admin extends React.Component {
                                 <i>'{review.comments}'</i><br /><br />
                                 Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
                                 <details className='details'><summary>Edit Post</summary>
-                                <h5>Must Fill Out All Fields</h5>
+                                <h5><i>(Must Fill Out All Fields)</i></h5>
                                 <form id={review.id} onSubmit={this.updateReview}>
                                     <input onKeyUp={this.changeUpdateReviewName} type="text" placeholder='name' /><br/>
                                     <textarea id='textarea' onKeyUp={this.changeUpdateReviewComment} type="text" placeholder='comments'/><br/>

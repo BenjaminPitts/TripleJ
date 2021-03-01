@@ -72,10 +72,10 @@ class App extends React.Component {
       if (page === 'reviews'){
         return <div className='main'>
         <div className='top'>
-        <h3>(720)688-9469</h3>
+        <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
         <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-        <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
-        </a>
+        <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+        </a></div>
         </div><br />
             <div className='container'>
                 {
@@ -92,12 +92,12 @@ class App extends React.Component {
                     )
                 }
             </div><br />
-            <h2>Post A Review:</h2>
+            <div className='innerPicBox'><h2>Post A Review:</h2>
             <form onSubmit={this.createReview}>
                 <input onKeyUp={this.changeNewReviewName} type="text" placeholder="name" /><br/>
                 <textarea id='textarea' onKeyUp={this.changeNewReviewComment} type="text" placeholder="comments" /><br/>
                 <input type="submit" value="Create New Review" />
-            </form><br />
+            </form></div><br />
             <div className='link' onClick={()=> this.setPage('main')}>
             Back To Main</div>
         </div>
@@ -105,10 +105,10 @@ class App extends React.Component {
         return (
           <div className='main'>
           <div className='top'>
-          <h3>(720)688-9469</h3>
+          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
-          </a>
+          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a></div>
           </div><br />
           <div className='innerPicBox'>
           <div className='results'>
@@ -179,12 +179,12 @@ class App extends React.Component {
 
           <div className='listBox'>
           <div className='top'>
-          <h3>(720)688-9469</h3>
+          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
-          </a>
+          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a></div>
           </div><br />
-          <h2>We serve the greater Denver-Metro area and are fully insured.<br />Our rates are competitive, negotiable, and we specialize in the following:</h2><br />
+          <div className='innerPicBox'><h2>We serve the greater Denver-Metro area and are fully insured. Our rates are competitive, negotiable, and we specialize in the following:</h2></div><br />
           <div className='innerPicBox'>
           <div className='picBox'>
           <div className='list'>
@@ -201,10 +201,10 @@ class App extends React.Component {
           </div>
 
           <br /><br />
-          <h2>Call us today at:<br />(720)688-9469<br /><br />
+          <div className='innerPicBox'><h2>Call us today at:<br />(720)688-9469<br /><br />
           or email us at:<br />
-          <a href='mailto:jjjpaintco@gmail.com'> jjjpaintco@gmail.com </a>
-          <br />for a free quote!</h2><br />
+          <a href='mailto:jjjpaintco@gmail.com' id='email'> jjjpaintco@gmail.com </a>
+          <br />for a free quote!</h2></div><br />
           <br /><br /><br />
           <div className='link' onClick={()=> this.setPage('main')}>
           Back To Main</div>
@@ -214,11 +214,11 @@ class App extends React.Component {
         return (
           <div className='main'>
           <div className='top'>
-          <h3>(720)688-9469</h3>
+          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
-          <a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
-          </a>
-          </div><br />
+          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          </a></div>
+          </div>
           <header>
           <div className='link' onClick={()=> this.setPage('services')}>
           Services</div>
@@ -239,9 +239,9 @@ class App extends React.Component {
           <i>'At Triple J, customer satisfaction is not just a catch-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to hard work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' /></a>
-          <a href='https://www.instagram.com/triple_j_painting/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' /></a>
-          <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' /></a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' id='icon1' /></a>
+          <a href='https://www.instagram.com/triple_j_painting/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' id='icon2' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' id='icon3' /></a></div>
           </div>
         )
       }

@@ -77,7 +77,7 @@ li {
   align-items: center;
   width: 100%;
   border-radius: 5px;
-  box-shadow: 10px 15px #090909;
+  box-shadow: 10px 15px 5px #090909;
   margin: 1rem;
 }
 .innerBox {
@@ -100,7 +100,7 @@ li {
   padding: .5rem;
   background: #d3d3d3;
   border-radius: 5px;
-  box-shadow: 10px 15px #090909;
+  box-shadow: 10px 15px 5px #090909;
   width: 85%;
   height: 100%;
 }
@@ -153,7 +153,7 @@ li {
     text-align: center;
     border-radius: 5px;
     background: #d3d3d3;
-    box-shadow: 10px 15px #090909;
+    box-shadow: 10px 15px 5px #090909;
     padding: 1rem;
     margin: .5rem auto;
     width: 85%;
@@ -206,15 +206,36 @@ li {
 #textarea:hover {
   background: #B0C4DE;
 }
+#icon1:hover {
+  box-shadow: 5px 5px 5px #090909;
+  border-radius: 16px;
+}
+#icon2:hover {
+  box-shadow: 5px 5px 5px #090909;
+  border-radius: 20px;
+}
+#icon3:hover {
+  box-shadow: 5px 5px 5px #090909;
+  border-radius: 8px;
+}
 a:hover {
   color: #d3d3d3;
+}
+#email:hover {
+  color: ivory;
+}
+#head {
+  background-color: white;
+  padding: .5rem;
+  margin: .5rem;
+  width: 80%;
 }
 button:hover {
   background: #d3d3d3;
   cursor: pointer;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 825px) {
 
 .jj > img {
   width: 80%;
@@ -227,5 +248,9 @@ button:hover {
   }
   li {
     font-size: 16px;
+  }
+  #head {
+    padding: 0;
+    margin: 0 0 1rem 0;
   }
 }
