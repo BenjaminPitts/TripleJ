@@ -66,9 +66,9 @@ class Admin extends React.Component {
     render = () => {
         return <div className='main' id='top'>
         <div className='top'>
-        <div className='innerPicBox' id='head'><h2>ADMIN PAGE</h2></div>
+        <div id='head'><h2>ADMIN PAGE</h2></div>
         <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
-        <div className='innerPicBox' id='head'><h2>ADMIN PAGE</h2></div>
+        <div id='head'><h2>ADMIN PAGE</h2></div>
         </div>
             <div className='container'>
                 {

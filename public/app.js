@@ -72,9 +72,9 @@ class App extends React.Component {
       if (page === 'reviews'){
         return <div className='main'>
         <div className='top'>
-        <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
+        <div id='head'><h3>(720)688-9469</h3></div>
         <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-        <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+        <div id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
         </a></div>
         </div><br />
             <div className='container'>
@@ -105,9 +105,9 @@ class App extends React.Component {
         return (
           <div className='main'>
           <div className='top'>
-          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
+          <div id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          <div id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></div>
           </div><br />
           <div className='innerPicBox'>
@@ -179,9 +179,9 @@ class App extends React.Component {
 
           <div className='listBox'>
           <div className='top'>
-          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
+          <div id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' onClick={()=> this.setPage('main')} />
-          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          <div id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></div>
           </div><br />
           <div className='innerPicBox'><h2>We serve the greater Denver-Metro area and are fully insured. Our rates are competitive, negotiable, and we specialize in the following:</h2></div><br />
@@ -214,9 +214,9 @@ class App extends React.Component {
         return (
           <div className='main'>
           <div className='top'>
-          <div className='innerPicBox' id='head'><h3>(720)688-9469</h3></div>
+          <div id='head'><h3>(720)688-9469</h3></div>
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
-          <div className='innerPicBox' id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
+          <div id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></div>
           </div>
           <header>
