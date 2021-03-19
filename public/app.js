@@ -142,15 +142,30 @@ class App extends React.Component {
 
           <div className='innerPicBox'>
           <div className='results'>
-          <h4>Business:</h4>
-          <h4>Residence:</h4>
+          <h4>Before:</h4>
+          <h4>After:</h4>
           </div>
           <div className='picBox'>
-          <img src='https://i.imgur.com/lAOCcSe.jpg' />
-          <img src='https://i.imgur.com/t1EMY5P.jpg' />
+          <img src='https://i.imgur.com/AxKaR2l.jpg' />
+          <img src='https://i.imgur.com/hX6WbcW.jpg' />
           </div>
           <div className='description'>
-          <i>a quick and easy way to add value to your property</i>
+          <i>fresh trim and siding make a stunning impact</i>
+          </div>
+          </div>
+
+          <br />
+          <div className='innerPicBox'>
+          <div className='results'>
+          <h4>Interior:</h4>
+          <h4>Exterior:</h4>
+          </div>
+          <div className='picBox'>
+          <img src='https://i.imgur.com/QnBri1U.jpg' />
+          <img src='https://i.imgur.com/7MHBThu.jpg' />
+          </div>
+          <div className='description'>
+          <i>breathe new life into your home</i>
           </div>
           </div>
 
@@ -165,7 +180,22 @@ class App extends React.Component {
           <img src='https://i.imgur.com/cO4sRWP.jpg' />
           </div>
           <div className='description'>
-          <i>a wide range of services</i>
+          <i>offering a wide range of services</i>
+          </div>
+          </div>
+
+          <br />
+          <div className='innerPicBox'>
+          <div className='results'>
+          <h4>Business:</h4>
+          <h4>Residence:</h4>
+          </div>
+          <div className='picBox'>
+          <img src='https://i.imgur.com/lAOCcSe.jpg' />
+          <img src='https://i.imgur.com/t1EMY5P.jpg' />
+          </div>
+          <div className='description'>
+          <i>a quick and easy way to add value to your property</i>
           </div>
           </div>
 
