@@ -200,13 +200,13 @@ li {
 }
 #textarea {
   margin: .2rem;
-  width: 50%;
+  width: 80%;
 }
 #textarea:hover {
   background: #B0C4DE;
 }
 #form-input {
-  width: 50%;
+  width: 80%;
 }
 #icon1:hover {
   box-shadow: 5px 5px 5px #090909;
@@ -266,11 +266,17 @@ button:hover {
   li {
     font-size: 16px;
   }
+  textarea {
+    width: 80%;
+  }
   #head {
     padding: 0;
     margin: .5rem 5px;
   }
   #review-box {
+    width: 80%;
+  }
+  #form-input {
     width: 80%;
   }
 }
