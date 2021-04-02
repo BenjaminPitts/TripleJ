@@ -92,10 +92,10 @@ class App extends React.Component {
                     )
                 }
             </div><br />
-            <div className='innerPicBox'><h2>Post A Review:</h2>
+            <div className='innerPicBox' id='review-box'><h2>Post A Review:</h2>
             <form onSubmit={this.createReview}>
-                <input onKeyUp={this.changeNewReviewName} type="text" placeholder="name" /><br/>
-                <textarea id='textarea' onKeyUp={this.changeNewReviewComment} type="text" placeholder="comments" /><br/>
+                <input onKeyUp={this.changeNewReviewName} type="text" placeholder="name" id='form-input'/><br/>
+                <textarea id='textarea' onKeyUp={this.changeNewReviewComment} type="text" rows='10' placeholder="comments" /><br/>
                 <input type="submit" value="Create New Review" />
             </form></div><br />
             <div className='link' onClick={()=> this.setPage('main')}>
@@ -269,9 +269,9 @@ class App extends React.Component {
           <i>'At Triple J, customer satisfaction is not just a catch-phrase for us, it's what we base our entire philosophy on. Our customers come first, from valuing their time and budget to providing the highest level of quality in every project we complete. Our commitment to hard work and integrity is what differentiates us from the competition.'
           </i></div></h2><br /><br /><br />
           <div className='footer'>
-          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' id='icon1' /></a>
-          <a href='https://www.instagram.com/triple_j_painting/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' id='icon2' /></a>
-          <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' id='icon3' /></a></div>
+          <a href='https://www.facebook.com/Triple-J-Painting-108220707802538/' target='_blank'><img src='https://i.imgur.com/br1AdKl.png' id='icon1' className='icon' /></a>
+          <a href='https://www.instagram.com/triple_j_painting/' target='_blank'><img src='https://i.imgur.com/I0uryE6.png' id='icon2' className='icon' /></a>
+          <a href='https://www.linkedin.com/in/benjaminjackpitts/' target='_blank'><img src='https://i.imgur.com/HJL6IBU.png' id='icon3' className='icon' /></a></div>
           </div>
         )
       }

@@ -21,7 +21,6 @@ body {
   width: 40%;
   border: 2px solid black;
   border-radius: 10px;
-  margin-bottom: .5rem;
   cursor: pointer;
 }
 header {
@@ -168,7 +167,7 @@ li {
   align-items: center;
   color: black;
   cursor: pointer;
-  font-size: 25px;
+  font-size: 24px;
   width: 100%;
   height: 90px;
   background: #B0C4DE;
@@ -206,6 +205,9 @@ li {
 #textarea:hover {
   background: #B0C4DE;
 }
+#form-input {
+  width: 50%;
+}
 #icon1:hover {
   box-shadow: 5px 5px 5px #090909;
   border-radius: 16px;
@@ -224,7 +226,6 @@ a:hover {
 #email:hover {
   color: ivory;
 }
-
 #head {
   display: flex;
   flex-direction: column;
@@ -236,6 +237,9 @@ a:hover {
   border-radius: 5px;
   border: 2px solid black;
   width: 80%;
+}
+#review-box {
+  width: 65%;
 }
 button:hover {
   background: #d3d3d3;
@@ -253,11 +257,20 @@ button:hover {
 .top {
   flex-direction: column;
   }
+  .logo {
+    width: 80%;
+  }
+  .icon {
+    width: 70%;
+  }
   li {
     font-size: 16px;
   }
   #head {
     padding: 0;
-    margin: 0 0 1rem 0;
+    margin: .5rem 5px;
+  }
+  #review-box {
+    width: 80%;
   }
 }
