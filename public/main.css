@@ -242,6 +242,9 @@ a:hover {
   border: 2px solid black;
   width: 80%;
 }
+#update:hover {
+  cursor: pointer;  
+}
 
 button:hover {
   background: #d3d3d3;

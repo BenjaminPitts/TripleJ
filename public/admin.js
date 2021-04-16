@@ -80,15 +80,16 @@ class Admin extends React.Component {
                                 <i>'{review.comments}'</i><br /><br />
                                 Posted: {new Date(review.created_at).toLocaleDateString("en-US")}</h4><br />
                                 <details className='details'><summary>Edit Post</summary>
-                                <h5><i>(Must Fill Out All Fields)</i></h5>
+                                <h5><i>(Must Fill Out Both Input Fields)</i></h5>
                                 <form id={review.id} onSubmit={this.updateReview}>
                                     <input
                                     id='form-input' onKeyUp={this.changeUpdateReviewName} type="text"
-                                    placeholder={this.name} /><br/>
+                                    placeholder='updated name' /><br/>
                                     <textarea id='textarea' rows='10' onKeyUp={this.changeUpdateReviewComment} type="text"
-                                     placeholder={this.comments}/><br/>
+                                     placeholder='updated comments'/><br/>
                                     <br />
-                                    <input type="submit" value="Update Review"/><br />
+                                    <input type="submit"
+                                    id='update' value="Update Review"/><br />
                                     <button className='delete' value={review.id} onClick={this.deleteReview}>DELETE REVIEW</button>
                                 </form>
                                 </details>
