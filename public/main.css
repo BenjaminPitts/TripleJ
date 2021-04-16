@@ -242,9 +242,7 @@ a:hover {
   border: 2px solid black;
   width: 80%;
 }
-#review-box {
-  width: 65%;
-}
+
 button:hover {
   background: #d3d3d3;
   cursor: pointer;
@@ -276,9 +274,6 @@ button:hover {
   #head {
     padding: 0;
     margin: .5rem 5px;
-  }
-  #review-box {
-    width: 80%;
   }
   #form-input {
     width: 80%;

@@ -91,13 +91,13 @@ class App extends React.Component {
                         }
                     )
                 }
-            </div><br />
-            <div className='innerPicBox' id='review-box'><h2>Post A Review:</h2>
+            <br />
+            <div className='innerPicBox'><div className='innerBox'><h2>Post A Review:</h2>
             <form onSubmit={this.createReview}>
                 <input onKeyUp={this.changeNewReviewName} type="text" placeholder="name" id='form-input'/><br/>
                 <textarea id='textarea' onKeyUp={this.changeNewReviewComment} type="text" rows='10' placeholder="comments" /><br/>
                 <input type="submit" value="Create New Review" />
-            </form></div><br />
+            </form></div></div></div><br />
             <div className='link' onClick={()=> this.setPage('main')}>
             Back To Main</div>
         </div>
@@ -248,7 +248,7 @@ class App extends React.Component {
           <img className='logo' src='https://i.imgur.com/kS4Vf3q.jpg?1' />
           <div id='head'><a href='mailto:jjjpaintco@gmail.com'>jjjpaintco@gmail.com
           </a></div>
-          </div>
+          </div><br />
           <header>
           <div className='link' onClick={()=> this.setPage('services')}>
           Services</div>
