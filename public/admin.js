@@ -82,8 +82,10 @@ class Admin extends React.Component {
                                 <details className='details'><summary>Edit Post</summary>
                                 <h5><i>(Must Fill Out All Fields)</i></h5>
                                 <form id={review.id} onSubmit={this.updateReview}>
-                                    <input onKeyUp={this.changeUpdateReviewName} type="text" placeholder='name' /><br/>
-                                    <textarea id='textarea' onKeyUp={this.changeUpdateReviewComment} type="text" placeholder='comments'/><br/>
+                                    <input onKeyUp={this.changeUpdateReviewName} type="text"
+                                    defaultValue={this.name} placeholder='name' /><br/>
+                                    <textarea id='textarea' rows='10' onKeyUp={this.changeUpdateReviewComment} type="text"
+                                    defaultValue={this.review} placeholder='comments'/><br/>
                                     <br />
                                     <input type="submit" value="Update Review"/><br />
                                     <button className='delete' value={review.id} onClick={this.deleteReview}>DELETE REVIEW</button>
