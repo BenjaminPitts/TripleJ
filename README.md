@@ -2,6 +2,6 @@ Triple J Painting Company is a full-CRUD, single page application built on a Lar
 <br><br>
 ### Serve Locally
 - prerequisites: php (v7+), composer (v2+)
-- run `php artisan serve`
+- in terminal, run `php artisan serve`
 - veiw in browser at: http://localhost:8000
 - visit live app: [Triple J Painting Company](https://triplejpainting.herokuapp.com/)
